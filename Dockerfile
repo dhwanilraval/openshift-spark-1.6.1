@@ -1,14 +1,14 @@
 FROM centos:latest
 
-MAINTAINER Matthew Farrellee <matt@cs.wisc.edu>
+MAINTAINER Thomas Mueseler <thomas.mueseler@t-systems.com>
 
 RUN yum install -y epel-release tar java && \
     yum clean all
 
 RUN cd /opt && \
-    curl http://www.us.apache.org/dist/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz | \
+    curl http://www.us.apache.org/dist/spark/spark-1.6.1/spark-1.6.1-bin-hadoop2.6.tgz | \
         tar -zx && \
-    ln -s spark-1.5.2-bin-hadoop2.6 spark
+    ln -s spark-1.6.1-bin-hadoop2.6 spark
 
 # SPARK_WORKER_DIR defaults to SPARK_HOME/work and is created on
 # Worker startup if it does not exist. instead of making SPARK_HOME
