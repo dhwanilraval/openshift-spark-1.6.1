@@ -1,8 +1,3 @@
---> Found Docker image 039c32c (9 days old) from Docker Hub for "centos:latest"
-    * An image stream will be created as "centos:latest" that will track this image
-    * A Docker build using source code from https://github.com/tmuesele/openshift-spark-1.6.1.git will be created
-      * The resulting image will be pushed to image stream "openshift-spark-161:latest"
-      * Every time "centos:latest" changes a new build will be triggered
 {
     "kind": "List",
     "apiVersion": "v1",

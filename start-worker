@@ -13,5 +13,6 @@ echo "Starting worker, will connect to: $master"
 
 # because the hostname only resolves locally
 export SPARK_LOCAL_HOSTNAME=$(hostname -i)
+export SPARK_USER=$(id -u)
 
 spark-class org.apache.spark.deploy.worker.Worker $master
