@@ -90,7 +90,7 @@ objects:
 parameters:
 - name: SPARK_IMAGE
   description: Name of the Spark master/worker image
-  value: openshift-spark-161
+  value: openshift-spark-161:latest
 - name: MASTER_NAME
   description: master name used as a service name and a selector
   generate: expression
